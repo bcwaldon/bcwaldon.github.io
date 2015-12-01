@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+
+    <div class="wrapper">
+
+      <header class="page-header">
+
+        <img src="/images/headshot.jpg" alt="avatar" class="avatar">
+
+        <h1 class="header-name">Brian Waldon</h1>
+
+        <div class="title-bar">
+
+          <h2 class="header-title">Software Engineer</h2>
+          {% include icon-links.html %}
+
+        </div>
+
+        <div class="executive-summary">
+          <p>I'm focused on the bleeding edge of infrastructure, building the distributed systems components that will enable the next generation of application development in our industry. Not only do I strive to make a big impact on any project in which I'm involved, I enable teams of engineers to do the same. In my spare time, I enjoy crushing my opponents in table tennis while waiting for my latest brew to ferment. Read on to learn more about my current and previous projects.</p>
+        </div>
+
+        <a href="mailto:brian@waldon.cc" class="contact-button">Email me</a>
+
+		<!--<a class="contact-button not-looking">I'm not looking for work right now.</a>-->
+
+      </header>
+
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        <!-- begin resume-item -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">CoreOS</h3>
+          <h4 class="resume-item-details">Engineering Team Lead &bull; Nov, 2013 &mdash; Present</h4>
+
+          <p class="resume-item-copy">I defined and implemented the initial architecture of <a href="https://tectonic.com">Tectonic</a>, CoreOS' flagship commercial product. Tectonic delivers <a href="http://kubernetes.io">Kubernetes</a> along with a custom management plane to enterprise customers. I was instrumental in establishing the early access program, and I built a cohesive development team around the product, eventually releasing GA in early November, 2015. See my talk from <a href="https://www.youtube.com/watch?v=6ENIF7VDlg0">CoreOS Fest 2015</a> to hear me speak about Tectonic pre-launch.</p>
+
+          <p class="resume-item-copy">My current role as the team lead is to ensure that active development on the product continues to move forward efficiently. My primary responsibilities include, but are not limited to:</p>
+
+          <ul class="resume-item-list">
+            <li>evolve the overall architecture and roadmap of the product, engaging internal stakeholders and external customers;</li>
+            <li>assist with company goal-setting and performance tracking via the <a href="http://www.businessinsider.com/googles-ranking-system-okr-2014-1">OKR process</a>;</li>
+            <li>drive day to day operations of a team of 5+ engineers, ensuring proper software development practices are observed and happiness is abundant;</li>
+            <li>develop Tectonic codebase alongside team members, providing guidance through code review and technical discussion;</li>
+			<li>manage releases to customers, generation of documentation and clean migration paths to preserve backwards compatibility; and</li>
+			<li>ensure customer success via proactive conversations and reactive L3 support.</li>
+          </ul>
+
+          <p class="resume-item-copy">During the development of Tectonic, I pioneered two major open-source projects, <a href="https://github.com/coreos/dex">dex</a> and <a href="https://github.com/coreos/coreos-kubernetes/tree/master/multi-node/aws">kube-aws</a>, both of which are detailed below under <a href="#projects">Projects</a>.</p>
+
+          <p class="resume-item-copy">Prior to CoreOS' decision to build Tectonic, I was responsible for CoreOS' custom cluster management solution, <a href="https://github.com/coreos/fleet">fleet</a>. The project provides a cluster-level abstraction atop <a href="http://www.freedesktop.org/wiki/Software/systemd/">systemd</a>, allowing users to safely operate services in an ephemeral environment. More information is available under <a href="#projects-fleet">Projects</a>.</p>
+
+	    </div>
+        <!-- end of resume-item -->
+
+        <!-- begin resume-item -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Nebula</h3>
+          <h4 class="resume-item-details">Architect &amp; Software Development Manager &bull; July, 2012 &mdash; Nov, 2013</h4>
+
+
+		  <p class="resume-item-copy"><a href="https://www.nebula.com/home/">Nebula</a> aimed to bring OpenStack to the datacenter in the form of a hardware appliance, the Nebula One Cloud Controller. I joined Nebula to lead an engineering team responsible for all OpenStack-focused development. I made a major impact as an engineer, an architect and a manager during my time at the company. My responsibilities included, but were not limited to:</p>
+
+          <ul class="resume-item-list">
+            <li>direct team of local and remote engineers, ensuring individuals are able to effectively contribute while maintaining relative sanity;</li>
+            <li>plan tactical engineering roadmap with VP of Engineering and other team leads;</li>
+            <li>provide architectural guidance on Nebula's OpenStack implementation and distributed data persistence layer;</li>
+            <li>proactively engage high profile customers such as <a href="http://www.bloomberg.com/bw/articles/2013-04-02/nebula-builds-cloud-computer-for-the-masses">Xerox PARC</a> to ensure their success with the product;</li>
+            <li>develop portions of control plane code (Python);</li>
+            <li>interface with hardware team to ensure internal physical components operate as expected; and</li>
+            <li>handle burn-in and migration testing in hardware lab before release to customers.</li>
+
+		</div>
+        <!-- end of resume-item -->
+
+        <!-- begin resume-item -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">OpenStack</h3>
+          <h4 class="resume-item-details">Project Technical Lead &bull; Oct, 2011 &mdash; Sep, 2012</h4>
+
+		  <p class="resume-item-copy">I was elected by the <a href="https://openstack.org">OpenStack</a> community to serve as the Project Technical Lead (PTL) of <a href="http://docs.openstack.org/developer/glance/">Glance</a> for two consecutive release cycles. Glance is a required component of all OpenStack clouds, acting as the central image service. As the PTL, some of my responsibilities included:</p>
+
+          <ul class="resume-item-list">
+            <li>evolve architecture of Glance to serve needs of other OpenStack projects;</li>
+            <li>harden existing components within Glance through expansion of automated testing;</li>
+            <li>triage bug reports and feature requests from community members;</li>
+            <li>coordinate with the community to maintain a high velocity of feature work;</li>
+            <li>manage the major releases, and maintain backports to stabilize previous releases;</li>
+            <li>participate in the Technical Committee, providing guidance and feedback to other PTLs; and</li>
+            <li>lead the Glance session track at OpenStack Summit, a semiannual conference where the global community comes together to plan for the upcoming release.</li>
+          </ul>
+		</div>
+        <!-- end of resume-item -->
+
+        <!-- begin resume-item -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Rackspace</h3>
+
+          <h4 class="resume-item-details">Software Developer, Rackspace Cloud &bull; Jan, 2011 &mdash; Apr, 2012</h4>
+		  <p class="resume-item-copy">Worked alongside public and private cloud teams to deliver OpenStack to customers.</p>
+
+          <br/>
+
+          <h4 class="resume-item-details">Software Developer, Rackspace Email &amp; Apps &bull; Jan, 2008 &mdash; Apr, 2011</h4>
+		  <p class="resume-item-copy">Built backend systems in Python &amp; PHP related to email routing and spam filtering.</p>
+
+		</div>
+        <!-- end of resume-item -->
+
+
+      </section>
+      <!-- end Experience -->
+
+      <!-- begin Projects -->
+      <section class="content-section" id="projects">
+
+        <header class="section-header">
+          <h2>Open Source Projects</h2>
+        </header>
+
+		<!-- resume-item start -->
+        <div class="resume-item">
+          <h3 class="resume-item-title" id="projects-fleet">fleet</h3>
+          <p class="resume-item-copy"><a href="https://github.com/coreos/fleet">fleet</a> is a cluster-level abstraction of systemd, enabling users to safely operate services in an ephemeral environment while incurring minimal resource and cognitive overhead.</p>
+
+          <ul class="resume-item-list">
+            <li>Provides schema-driven REST-like API for users to interact with the system</li>
+			<li>Interacts systemd via DBus APIs</li>
+			<li>Uses etcd for distributed locking &amp; persistent data storage</li>
+			<li>Operated production CoreOS services for ~2 years</li>
+			<li>Deployed by external companies to coordinate thousands of hosts</li>
+          </ul>
+
+        </div>
+		<!-- resume-item end -->
+
+		<!-- resume-item start -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">dex</h3>
+          <p class="resume-item-copy"><a href="https://github.com/coreos/dex">dex</a> is a federated identity management service. The primary goal of dex is to provide a powerful, flexible, secure solution to identity management while minimizing overhead on both end users and deployers of the system.</p>
+
+          <ul class="resume-item-list">
+            <li>Frontend communication via <a href="https://openid.net/connect/">OpenID Connect</a>, similar to OAuth2</li>
+            <li>Users self-authenticate through federation of control to arbitrary backends (Google, Facebook, LinkedIn, GitHub, LDAP, local DB, etc)</li>
+			<li>Ability to send emails to end users to facilitate secure communication of passwords</li>
+            <li>Signing keys automatically rotated, sensitive data encrypted at rest</a>
+          </ul>
+
+          <p class="resume-item-copy">dex currently manages authentication for all CoreOS customers at <a href="https://account.tectonic.com">account.tectonic.com</a>. Additionally, dex is automatically deployed into each Tectonic cluster.</p>
+
+          <p class="resume-item-copy">The OpenID Connect golang bindings live in a separate library: <a href="https://github.com/coreos/go-oidc">github.com/coreos/go-oidc</a>.</p>
+
+        </div>
+		<!-- resume-item end -->
+
+		<!-- resume-item start -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">kube-aws</h3>
+          <p class="resume-item-copy"><a href="https://github.com/coreos/coreos-kubernetes/tree/master/multi-node/aws">kube-aws</a> is a deployment tool for Kubernetes on AWS using CoreOS.</p>
+
+          <ul class="resume-item-list">
+			  <li>Built atop CoreOS projects: CoreOS Linux, etcd, flannel, etc</li>
+			  <li>Utilizes AWS services to provide a secure, manageable Kubernetes cluster: CloudFormation, IAM policies, minimal security groups, PKI, etc</li>
+			  <li>Manages CloudFormation templates &amp; installation scripts in versioned S3 buckets</li>
+			  <li>Currently in use by the CoreOS community &amp; paying customers</li>
+		  </ul>
+        </div>
+		<!-- resume-item end -->
+
+		<!-- resume-item start -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Smaller Notable Projects</h3>
+          <p class="resume-item-copy">In addition to the larger projects above, I have also been responsible for many smaller projects over the years:</p>
+
+          <p class="resume-item-copy">
+            <a href="https://github.com/coreos/coreos-cloudinit">coreos-cloudinit</a>
+            <ul class="resume-item-list">
+              <li>Inspired by Ubuntu's cloudinit tool</li>
+              <li>Used to configure CoreOS Linux hosts via YAML</li>
+              <li>Aware of metadata services on most major cloud providers: AWS, GCE, Rackspace, Digital Ocean, etc</li>
+              <li>Currently managing tens of thousands of active CoreOS Linux hosts</li>
+			  <li>Shipped directly in CoreOS Linux image</li>
+            </ul>
+          </p>
+
+          <p class="resume-item-copy">
+            <a href="https://github.com/coreos/etcd/tree/master/client">github.com/coreos/etcd/client</a>
+            <ul class="resume-item-list">
+              <li>Completely rewrote <a href="https://github.com/coreos/go-etcd">original client bindings</a> based on what was learned from development of fleet</li>
+              <li>New package now the official golang bindings for etcd APIs</li>
+              <li>Currently in use by fleet for locking, data persistence, liveness checks</li>
+            </ul>
+          </p>
+
+          <p class="resume-item-copy">
+            <a href="https://github.com/coreos/go-systemd/tree/master/unit">github.com/coreos/go-systemd/unit</a>
+            <ul class="resume-item-list">
+              <li>Systemd unit file parser</li>
+              <li>Reverse-engineered systemd source code</li>
+			  <li>Package written for fleet to (de)serialize unit files</li>
+            </ul>
+          </p>
+
+          <p class="resume-item-copy">
+            <a href="https://github.com/cloudenvy/cloudenvy">cloudenvy</a>
+            <ul class="resume-item-list">
+              <li>Automates deployment and configuration of OpenStack instances using cloudinit</li>
+              <li>Used for automated testing of Nebula Cloud Controller</li>
+			  <li>Example <a href="https://github.com/bcwaldon/twoface">available here</a> of use to deploy git mirror</li>
+            </ul>
+          </p>
+
+        </div>
+		<!-- resume-item end -->
+
+      </section>
+      <!-- end Projects -->
+
+      <footer class="page-footer">
+        <!--<p class="footer-line"><a href="https://github.com/bcwaldon/bcwaldon.github.io">the source lives here</a></p>-->
+        <p class="footer-line"><a href="https://github.com/jglovier/resume-template">forked from github.com/jglovier</a></p>
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>

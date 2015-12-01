@@ -1,0 +1,17 @@
+# Site settings
+title: "Brian Waldon"
+description: "Resume Description"
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Design settings
+resume_theme: default
+
+# Drop .html file extension from URLs
+permalink: pretty
+gems:
+  - jekyll-redirect-from
